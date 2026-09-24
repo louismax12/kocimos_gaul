@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+
+<html lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Komsos SMTB Studio - Paroki Santa Maria Tak Bercela Surabaya</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "warm-gold": "#D97706",
+            "outline-variant": "#dbc2b0",
+            "surface-dim": "#dadada",
+            "surface-container": "#eeeeee",
+            "secondary-fixed-dim": "#b7c4ff",
+            "on-secondary-container": "#fffbff",
+            "on-surface": "#1a1c1c",
+            "error": "#ba1a1a",
+            "secondary-container": "#4069f2",
+            "surface-variant": "#e2e2e2",
+            "on-tertiary-fixed-variant": "#3a485c",
+            "status-error": "#B91C1C",
+            "on-tertiary-container": "#fdfcff",
+            "secondary-fixed": "#dce1ff",
+            "surface-container-low": "#f3f3f3",
+            "tertiary-fixed-dim": "#b9c7e0",
+            "surface-card": "#FFFFFF",
+            "tertiary-fixed": "#d5e3fd",
+            "tertiary-container": "#67758c",
+            "on-primary-container": "#fffbff",
+            "surface": "#f9f9f9",
+            "on-error": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "tertiary": "#4f5d72",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed-variant": "#6e3900",
+            "on-secondary-fixed": "#001551",
+            "on-primary": "#ffffff",
+            "status-success": "#15803D",
+            "primary-fixed-dim": "#ffb77d",
+            "inverse-on-surface": "#f0f1f1",
+            "secondary": "#1d4ed8",
+            "surface-bright": "#f9f9f9",
+            "error-container": "#ffdad6",
+            "on-surface-variant": "#554336",
+            "primary-fixed": "#ffdcc3",
+            "on-error-container": "#93000a",
+            "on-background": "#1a1c1c",
+            "on-primary-fixed": "#2f1500",
+            "surface-container-high": "#e8e8e8",
+            "surface-cream": "#FAFAFA",
+            "slate-primary": "#334155",
+            "primary-container": "#b15f00",
+            "warm-gold-hover": "#B45309",
+            "outline": "#887364",
+            "slate-dark": "#0F172A",
+            "inverse-surface": "#2f3131",
+            "surface-tint": "#904d00",
+            "surface-container-highest": "#e2e2e2",
+            "status-warning": "#B45309",
+            "on-tertiary-fixed": "#0d1c2f",
+            "border-subtle": "#E2E8F0",
+            "on-secondary": "#ffffff",
+            "sacred-blue": "#1D4ED8",
+            "sacred-blue-subtle": "#EFF6FF",
+            "inverse-primary": "#ffb77d",
+            "primary": "#8d4b00",
+            "background": "#f9f9f9",
+            "on-secondary-fixed-variant": "#0039b5"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-2xl": "4rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "margin-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "margin": "2rem"
+          },
+          "fontFamily": {
+            "title-sm": ["Inter"],
+            "display-lg-mobile": ["Inter"],
+            "body-sm": ["Inter"],
+            "label-sm": ["Inter"],
+            "label-md": ["Inter"],
+            "headline-lg": ["Inter"],
+            "headline-md": ["Inter"],
+            "caption": ["Inter"],
+            "display-lg": ["Inter"],
+            "body-md": ["Inter"],
+            "headline-lg-mobile": ["Inter"],
+            "body-lg": ["Inter"],
+            "title-md": ["Inter"],
+            "headline-sm": ["Inter"]
+          }
+        }
+      }
+    };
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+<body class="bg-surface-cream text-slate-dark antialiased" style="font-family: Inter, sans-serif;">
+<!-- Shared Top Navigation Anchor -->
+<header class="sticky top-0 z-50 bg-surface-cream/95 backdrop-blur-md border-b border-border-subtle">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex items-center justify-between h-20">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-xl bg-warm-gold/10 flex items-center justify-center text-warm-gold border border-warm-gold/20 shadow-sm">
+<svg class="w-6 h-6" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<div>
+<span class="text-xs uppercase tracking-wider font-semibold text-warm-gold block">Paroki Santa Maria Tak Bercela</span>
+<h2 class="text-slate-dark text-lg font-bold leading-tight tracking-[-0.015em]">Komsos SMTB Studio</h2>
+</div>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-slate-primary hover:text-warm-gold text-sm font-semibold transition-colors duration-200 border-b-2 border-warm-gold pb-1" href="#beranda">Beranda</a>
+<a class="text-slate-primary hover:text-warm-gold text-sm font-medium transition-colors duration-200" href="#portofolio">Portofolio</a>
+<a class="text-slate-primary hover:text-warm-gold text-sm font-medium transition-colors duration-200" href="#e-katekese">E-Katekese</a>
+<a class="text-slate-primary hover:text-warm-gold text-sm font-medium transition-colors duration-200" href="#warta">Warta Paroki</a>
+<a class="text-slate-primary hover:text-warm-gold text-sm font-medium transition-colors duration-200" href="#kontak">Kontak</a>
+</nav>
+<div class="flex items-center gap-3">
+<a class="hidden sm:inline-flex items-center justify-center rounded-lg h-10 px-4 bg-surface-container-low text-slate-dark hover:bg-surface-container text-sm font-semibold transition-all border border-border-subtle" href="#kontak">
+            Ajukan Peliputan
+          </a>
+<a class="inline-flex items-center justify-center rounded-lg h-10 px-4 bg-warm-gold hover:bg-warm-gold-hover text-on-primary text-sm font-semibold shadow-sm transition-all" href="#join">
+            Gabung Tim Media
+          </a>
+</div>
+</div>
+</div>
+</header>
+<!-- Hero Section & Media Showcase -->
+<section class="relative overflow-hidden pt-8 pb-16 lg:py-20" id="beranda">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<!-- Left: Copy & Call-to-Actions -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<div class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-sacred-blue-subtle text-secondary text-xs font-semibold uppercase tracking-wider border border-sacred-blue/20">
+<span class="w-2 h-2 rounded-full bg-sacred-blue animate-pulse"></span>
+            Pelayanan Pewartaan Digital Katolik
+          </div>
+<h1 class="text-slate-dark text-4xl sm:text-5xl lg:text-5xl font-black leading-tight tracking-[-0.03em]">
+            Menghadirkan Kabar Baik Melalui Media Digital Paroki SMTB Surabaya
+          </h1>
+<p class="text-slate-primary text-base sm:text-lg leading-relaxed max-w-2xl">
+            Studio kreatif pelayanan komunikasi sosial Paroki Santa Maria Tak Bercela. Berdedikasi memproduksi siaran liturgi sinematik, warta paroki interaktif, dan katekese multimedia modern yang menjangkau umat di mana saja.
+          </p>
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center gap-2 rounded-lg h-12 px-6 bg-warm-gold hover:bg-warm-gold-hover text-on-primary text-base font-semibold shadow-md transition-all" href="#portofolio">
+<span>Jelajahi Karya Media</span>
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 rounded-lg h-12 px-6 bg-surface-card hover:bg-surface-container-low text-slate-dark text-base font-semibold border border-border-subtle shadow-sm transition-all" href="#kontak">
+<span class="material-symbols-outlined" data-icon="calendar_today">calendar_today</span>
+<span>Ajukan Peliputan</span>
+</a>
+</div>
+<!-- Highlight Status Bar -->
+<div class="pt-4 flex items-center gap-4 text-xs font-medium text-slate-primary">
+<div class="flex items-center gap-1.5 text-status-success">
+<span class="material-symbols-outlined" data-icon="radio_button_checked">radio_button_checked</span>
+<span>Misa Live Streaming Setiap Minggu</span>
+</div>
+<span class="text-outline-variant">•</span>
+<div class="flex items-center gap-1.5 text-slate-primary">
+<span class="material-symbols-outlined" data-icon="hd">hd</span>
+<span>Kualitas Produksi 4K Cinema</span>
+</div>
+</div>
+</div>
+<!-- Right: Video Showreel Card Preview -->
+<div class="lg:col-span-5">
+<div class="relative rounded-2xl overflow-hidden shadow-2xl border border-border-subtle group bg-slate-dark">
+<div class="w-full aspect-[4/3] bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-90" data-alt="Cinematic frame capture inside the sanctuary of Santa Maria Tak Bercela Catholic Church Surabaya, depicting the altar bathed in warm ambient spiritual morning light through stained glass windows with media production cameras visible in crisp detail. The atmosphere is solemn, reverent, clean, and elegant with deep slate and warm amber tones reflecting liturgical beauty." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZV-DDEhoxWnNXg562Fw5FGbZpJFOTKSiYfOaJReItjiLTM_KATrcTIz1j5C4fiRDdj3VhF58l8epPS7gFZxrIu01rTEkSd5luAXdxQx5mCENvxI7r2KOyqn3TyR9N-r6X6JMCx4VCyPuB3-FGWgp5SLLktxHuxaN41cNUuS2s2DYgprcfe2Ow23j_LYxSs6_EPzDfCi3LPR5B8nJiXFRqO3bkVk3yF0FEJBGsjfDSQQQTJrLVE37W')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-slate-dark via-slate-dark/40 to-transparent flex flex-col justify-between p-6 text-surface-cream">
+<div class="flex justify-between items-center">
+<span class="px-3 py-1 bg-warm-gold text-surface-cream text-xs font-bold rounded-full uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="play_circle">play_circle</span> Showreel 2025
+                </span>
+<span class="px-2.5 py-1 bg-slate-dark/70 backdrop-blur-md rounded-md text-xs font-medium">02:45 MIN</span>
+</div>
+<div class="flex items-end justify-between">
+<div>
+<p class="text-xs font-medium text-warm-gold uppercase tracking-wider">Trailer Dokumenter Liturgi</p>
+<h3 class="text-lg font-bold text-surface-cream">Harmoni Jiwa &amp; Perayaan Iman SMTB</h3>
+</div>
+<button class="w-12 h-12 rounded-full bg-warm-gold text-on-primary flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+<span class="material-symbols-outlined" data-icon="play_arrow" data-weight="fill" style="font-variation-settings: 'FILL' 1;">play_arrow</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Interactive Outreach Statistics Strip -->
+<div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4">
+<div class="bg-surface-card rounded-xl p-6 border border-border-subtle shadow-sm hover:border-warm-gold/40 transition-colors">
+<div class="flex items-center justify-between mb-2">
+<span class="text-slate-primary text-sm font-medium">Umat &amp; Pengikut</span>
+<span class="material-symbols-outlined text-warm-gold" data-icon="groups">groups</span>
+</div>
+<p class="text-slate-dark text-3xl font-extrabold leading-tight">45K+</p>
+<div class="flex items-center gap-1 mt-2 text-status-success text-xs font-semibold">
+<span class="material-symbols-outlined text-sm" data-icon="trending_up">trending_up</span>
+<span>+14% kuartal ini</span>
+</div>
+</div>
+<div class="bg-surface-card rounded-xl p-6 border border-border-subtle shadow-sm hover:border-warm-gold/40 transition-colors">
+<div class="flex items-center justify-between mb-2">
+<span class="text-slate-primary text-sm font-medium">Video Misa &amp; Liturgi</span>
+<span class="material-symbols-outlined text-warm-gold" data-icon="videocam">videocam</span>
+</div>
+<p class="text-slate-dark text-3xl font-extrabold leading-tight">180+</p>
+<div class="flex items-center gap-1 mt-2 text-status-success text-xs font-semibold">
+<span class="material-symbols-outlined text-sm" data-icon="trending_up">trending_up</span>
+<span>+8% siaran bertambah</span>
+</div>
+</div>
+<div class="bg-surface-card rounded-xl p-6 border border-border-subtle shadow-sm hover:border-warm-gold/40 transition-colors">
+<div class="flex items-center justify-between mb-2">
+<span class="text-slate-primary text-sm font-medium">Impresi Bulanan</span>
+<span class="material-symbols-outlined text-warm-gold" data-icon="visibility">visibility</span>
+</div>
+<p class="text-slate-dark text-3xl font-extrabold leading-tight">1.2M</p>
+<div class="flex items-center gap-1 mt-2 text-status-success text-xs font-semibold">
+<span class="material-symbols-outlined text-sm" data-icon="trending_up">trending_up</span>
+<span>+22% pertumbuhan jangkauan</span>
+</div>
+</div>
+<div class="bg-surface-card rounded-xl p-6 border border-border-subtle shadow-sm hover:border-warm-gold/40 transition-colors">
+<div class="flex items-center justify-between mb-2">
+<span class="text-slate-primary text-sm font-medium">Relawan Media Aktif</span>
+<span class="material-symbols-outlined text-warm-gold" data-icon="volunteer_activism">volunteer_activism</span>
+</div>
+<p class="text-slate-dark text-3xl font-extrabold leading-tight">65+</p>
+<div class="flex items-center gap-1 mt-2 text-sacred-blue text-xs font-semibold">
+<span class="material-symbols-outlined text-sm" data-icon="volunteer_activism">volunteer_activism</span>
+<span>4 Divisi Pelayanan</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Portofolio Konten Multimedia -->
+<section class="py-16 bg-surface-container-low border-y border-border-subtle" id="portofolio">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+<div>
+<div class="inline-flex items-center gap-1.5 text-xs font-bold text-warm-gold tracking-widest uppercase mb-2">
+<span class="material-symbols-outlined text-sm" data-icon="auto_awesome">auto_awesome</span>
+            Karya Pewartaan Kreatif
+          </div>
+<h2 class="text-3xl font-extrabold text-slate-dark tracking-tight">Portofolio Konten Multimedia</h2>
+<p class="text-slate-primary text-sm sm:text-base mt-1">
+            Telusuri arsip dokumentasi rohani, infografis liturgis, siaran misa kudus, dan obrolan rohani mingguan.
+          </p>
+</div>
+<!-- Filter Tab Buttons -->
+<div class="flex flex-wrap gap-2 p-1.5 bg-surface-card rounded-xl border border-border-subtle shadow-sm" id="portfolio-tabs">
+<button class="tab-btn active-tab px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all bg-slate-primary text-on-primary" data-cat="all" onclick="filterPortfolio('all')">
+            Semua
+          </button>
+<button class="tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-primary hover:text-slate-dark transition-all" data-cat="video" onclick="filterPortfolio('video')">
+            Video &amp; Misa
+          </button>
+<button class="tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-primary hover:text-slate-dark transition-all" data-cat="grafis" onclick="filterPortfolio('grafis')">
+            Grafis Liturgis
+          </button>
+<button class="tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-primary hover:text-slate-dark transition-all" data-cat="artikel" onclick="filterPortfolio('artikel')">
+            Artikel &amp; Warta
+          </button>
+<button class="tab-btn px-4 py-2 rounded-lg text-xs sm:text-sm font-medium text-slate-primary hover:text-slate-dark transition-all" data-cat="podcast" onclick="filterPortfolio('podcast')">
+            Podcast Suara Gembala
+          </button>
+</div>
+</div>
+<!-- Portfolio Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
+<!-- Card 1: Video Khotbah -->
+<article class="portfolio-item group bg-surface-card rounded-xl border border-border-subtle overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col" data-category="video">
+<div class="relative overflow-hidden aspect-video bg-slate-dark">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A reverent priest giving an inspiring homily from the polished ambo pulpit inside SMTB Church Surabaya during solemn Sunday Eucharistic celebration. Warm golden church lighting softly highlights the sacred vestments while the congregation listens peacefully in the background with tasteful camera depth of field." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGrOQ8uTrIwZJd4nBnT5hQWGFjrVVd5X1-_gy0sUUJiS7Du7s5QsPWbp7ztzbFXCBAMY2zfnFaeuDUKO7SSx485btxk6C5TpFO9Bhyr0xeFYdB0_ni7ITi599fjxKAJnLaN5QdM15e5CTpRgr5ctsxCZ5ePrMxehyBmBbNPwL1bIxj02p7240FN-2JYtgNLshsqnPq17OGsk-9YDv9uGQ9j7v1QaRkI6RWtiKnTZv-TdUWZKTFVY1m"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 bg-warm-gold text-on-primary text-xs font-bold rounded-md uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="videocam">videocam</span> Video Khotbah
+            </span>
+<span class="absolute bottom-3 right-3 px-2 py-0.5 bg-slate-dark/80 backdrop-blur-sm text-surface-cream text-xs rounded font-medium">18:40</span>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<span class="text-xs text-slate-primary font-medium">18 Mei 2025 • Misa Hari Minggu</span>
+<h3 class="text-lg font-bold text-slate-dark mt-1 group-hover:text-warm-gold transition-colors line-clamp-2">
+                Menemukan Damai di Tengah Hiruk Pikuk Kota Surabaya
+              </h3>
+<p class="text-slate-primary text-sm mt-2 line-clamp-2">
+                Renungan mendalam Romo Paroki tentang panggilan menjaga hati tetap teguh berpengharapan menghadapi dinamika harian.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-border-subtle flex items-center justify-between">
+<span class="text-xs font-semibold text-slate-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="smart_display">smart_display</span> YouTube SMTB
+              </span>
+<a class="inline-flex items-center gap-1 text-xs font-bold text-warm-gold hover:text-warm-gold-hover" href="#">
+                Tonton Video
+                <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 2: Grafis Liturgis -->
+<article class="portfolio-item group bg-surface-card rounded-xl border border-border-subtle overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col" data-category="grafis">
+<div class="relative overflow-hidden aspect-video bg-slate-dark">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="An elegant Catholic liturgical digital art infographic showcasing the solemnity of Pentecost with descending dove symbols, stylized tongues of fire, and sacred typography in warm gold and deep slate tones on a clean serene parchment texture backdrop." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEW5ZeMM4s3z-NQNSeiMTP8piBpEBSTL92DyypMUbgMR45uoJicpF-hHVMfoT2G9TIlU9ZgAUJ-D9soOnyXWKRuEFNTCz55b8hrSYgCujmOjFD56NmjUPTIAgWi2EqPbxX76ZGHFvaU35y4CzaVyISTA0VGPYgE-Pl1nrzskKbp-rC_LeeUvOpi7_xHpR3YTfB0kEyTeUcCBE5ZvPqlwaLv1dIJc79LTIMyQib6WKo3_PML0HXZA9f"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 bg-slate-primary text-on-primary text-xs font-bold rounded-md uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="palette">palette</span> Grafis Liturgis
+            </span>
+<span class="absolute bottom-3 right-3 px-2 py-0.5 bg-slate-dark/80 backdrop-blur-sm text-surface-cream text-xs rounded font-medium">Infografis Feed</span>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<span class="text-xs text-slate-primary font-medium">12 Mei 2025 • Katekese Visual</span>
+<h3 class="text-lg font-bold text-slate-dark mt-1 group-hover:text-warm-gold transition-colors line-clamp-2">
+                Tujuh Karunia Roh Kudus dalam Kehidupan Modern
+              </h3>
+<p class="text-slate-primary text-sm mt-2 line-clamp-2">
+                Panduan visual interaktif untuk memahami dan mempraktikkan karunia Roh Kudus di tempat kerja, kampus, dan keluarga.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-border-subtle flex items-center justify-between">
+<span class="text-xs font-semibold text-slate-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="photo_library">photo_library</span> Instagram Series
+              </span>
+<a class="inline-flex items-center gap-1 text-xs font-bold text-warm-gold hover:text-warm-gold-hover" href="#">
+                Lihat Desain
+                <span class="material-symbols-outlined text-sm" data-icon="open_in_new">open_in_new</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 3: Podcast Suara Gembala -->
+<article class="portfolio-item group bg-surface-card rounded-xl border border-border-subtle overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col" data-category="podcast">
+<div class="relative overflow-hidden aspect-video bg-slate-dark">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A modern, cozy Catholic podcast studio setup inside SMTB Surabaya parish office with high-end podcast microphones, acoustic wooden warmth panels, ambient golden lighting, headphones, and two young parish youth members having a thoughtful spiritual conversation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAooUHH4bBNcavi_bL_uvnrNXDH__5BHeN27UeurDxBw47Cuz_GBXYPANyohfC9kdSTqt0HPbcTQzMWPAvC3wkQML-I0W0zZuGcsX4Muts1pTYzZnKyiM64iKoz3cmKKRX8qvk7tNj2-PBMCjA5YbdaCMAWs8atBYYJYblHVIc2WVC8704anmHqkq20AHzphqJKcEDPOaX4Eg1EGM6WkEojaWgSuUdlrlbgGYgR4GBXJ8c1NoPT_kUK"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 bg-warm-gold text-on-primary text-xs font-bold rounded-md uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="podcasts">podcasts</span> Suara Gembala
+            </span>
+<span class="absolute bottom-3 right-3 px-2 py-0.5 bg-slate-dark/80 backdrop-blur-sm text-surface-cream text-xs rounded font-medium">32:15 MIN</span>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<span class="text-xs text-slate-primary font-medium">Episode 42 • Obrolan Rohani Muda</span>
+<h3 class="text-lg font-bold text-slate-dark mt-1 group-hover:text-warm-gold transition-colors line-clamp-2">
+                "Karier, Doa, dan Cinta": Menjaga Komitmen Orang Muda Katolik
+              </h3>
+<p class="text-slate-primary text-sm mt-2 line-clamp-2">
+                Membahas kecemasan generasi muda seputar masa depan karier, relasi romantis berprinsip kristiani, dan konsistensi doa pribadi.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-border-subtle flex items-center justify-between">
+<span class="text-xs font-semibold text-slate-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="graphic_eq">graphic_eq</span> Spotify &amp; Apple
+              </span>
+<a class="inline-flex items-center gap-1 text-xs font-bold text-warm-gold hover:text-warm-gold-hover" href="#">
+                Dengarkan
+                <span class="material-symbols-outlined text-sm" data-icon="play_arrow">play_arrow</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 4: Artikel & Warta -->
+<article class="portfolio-item group bg-surface-card rounded-xl border border-border-subtle overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col" data-category="artikel">
+<div class="relative overflow-hidden aspect-video bg-slate-dark">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Editorial photograph showing church volunteers serving hot meals and community medical aid at the Saint Mary parish hall in Surabaya. Warm natural daylight shines over friendly smiles, hands holding bread, and respectful compassionate gestures in an elegant photojournalistic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFw7g0zyFUoCin-LInlFTzjuRu1gYW_D9mCl2eKnDvpwY6wSuMD56hd442VT3QZ9UXE1tNzLxvw6wUHqVcrxKmrTueWrBLS2AjnOx7uhYYPCwdzLzUFjNiOGJFBDRWuyrIiZFgxcX0aUsItcJ7Ft7-gCm5DW7VjKb__CA00S3ZM_e1ls_sxhOq3_F6OR-aMzaGv4sAh8Yspx0bUXmKhyJ2rl5Fo9yQBoviBp51FNkGNiTN5eDAuwlv"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 bg-slate-primary text-on-primary text-xs font-bold rounded-md uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="newspaper">newspaper</span> Warta Paroki
+            </span>
+<span class="absolute bottom-3 right-3 px-2 py-0.5 bg-slate-dark/80 backdrop-blur-sm text-surface-cream text-xs rounded font-medium">Bacaan 4 Menit</span>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<span class="text-xs text-slate-primary font-medium">08 Mei 2025 • Liputan Sosial</span>
+<h3 class="text-lg font-bold text-slate-dark mt-1 group-hover:text-warm-gold transition-colors line-clamp-2">
+                Aksi Nyata Belas Kasih: Seksi Sosial Paroki SMTB Salurkan Bantuan
+              </h3>
+<p class="text-slate-primary text-sm mt-2 line-clamp-2">
+                Liputan mendalam tentang gotong royong ratusan umat menyalurkan bantuan sembako dan pelayanan kesehatan gratis untuk masyarakat sekitar.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-border-subtle flex items-center justify-between">
+<span class="text-xs font-semibold text-slate-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="article">article</span> Buletin Digital
+              </span>
+<a class="inline-flex items-center gap-1 text-xs font-bold text-warm-gold hover:text-warm-gold-hover" href="#">
+                Baca Artikel
+                <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 5: Video Khotbah / Liturgi -->
+<article class="portfolio-item group bg-surface-card rounded-xl border border-border-subtle overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col" data-category="video">
+<div class="relative overflow-hidden aspect-video bg-slate-dark">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Cinematic wide view of the grand Easter Vigil liturgy at Santa Maria Tak Bercela parish church with hundreds of faithful holding glowing beeswax candles in darkness, warm candle flames illuminating faces with deep spiritual reverence and cinematic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUTDvLqhE3JX5fDQPavv-afdm_LHzVpxI6tMEQ3NLMPLd_h7AxU7XbTO9g2CUBPksloISLKFBEW0vjY2Eyxu1yhM0_BrVBeGwISlGDkQwVma1SVha6u9mpfassDFtoNAPG0-7rHEQ9QaEOPoxiyF7cRntYFKT0B7zXHjiV-UP9jbPODEB8dfD3V6I1RtD5p_l29X8097a1sw2ZyNlyn3T0NB-3g_IsCEnOJs8kFj1wVrdLhL8TNUgu"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 bg-warm-gold text-on-primary text-xs font-bold rounded-md uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="live_tv">live_tv</span> Siaran Langsung
+            </span>
+<span class="absolute bottom-3 right-3 px-2 py-0.5 bg-slate-dark/80 backdrop-blur-sm text-surface-cream text-xs rounded font-medium">01:52:10</span>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<span class="text-xs text-slate-primary font-medium">Paskah 2025 • Siaran Misa Agung</span>
+<h3 class="text-lg font-bold text-slate-dark mt-1 group-hover:text-warm-gold transition-colors line-clamp-2">
+                Misa Vigili Paskah &amp; Penerimaan Sakramen Inisiasi Katolik
+              </h3>
+<p class="text-slate-primary text-sm mt-2 line-clamp-2">
+                Dokumentasi multi-kamera 4K upacara Cahaya Kristus, pembaharuan janji baptis, dan penerimaan para katekumen baru.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-border-subtle flex items-center justify-between">
+<span class="text-xs font-semibold text-slate-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="videocam">videocam</span> Siaran Lengkap
+              </span>
+<a class="inline-flex items-center gap-1 text-xs font-bold text-warm-gold hover:text-warm-gold-hover" href="#">
+                Putar Siaran
+                <span class="material-symbols-outlined text-sm" data-icon="play_arrow">play_arrow</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Card 6: Podcast Gembala -->
+<article class="portfolio-item group bg-surface-card rounded-xl border border-border-subtle overflow-hidden shadow-sm hover:shadow-md transition-all flex flex-col" data-category="podcast">
+<div class="relative overflow-hidden aspect-video bg-slate-dark">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Intimate recording session inside SMTB creative studio with an older Catholic priest holding an open Bible smiling while speaking into a professional studio microphone. The warm wooden aesthetic and soft ambient light convey wisdom and pastoral gentle guidance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3WSZU9xGPHyAHwgxTj5YpUQe-WEFQsqQYR_cGnXbE7iRU1OUGFmYZ8gCct7wmnvAzbQKX-2qO5Q-uvHQIxSSF-NuAO7jDonK-7tlLhczbCFcQp4lLpxwXO3p3FMgxskwd-7VcfVIHwN0U4XGRS43Siud9PNaDZiyFuqteAYHRZ6mLvjziNsi6rGr0NneQlOzzedoU_akzqhV1TREhoF2lWP6YMR2ddUY_fhOiJesJmWDFkmNK75A6"/>
+<span class="absolute top-3 left-3 px-2.5 py-1 bg-warm-gold text-on-primary text-xs font-bold rounded-md uppercase tracking-wider flex items-center gap-1">
+<span class="material-symbols-outlined text-xs" data-icon="podcasts">podcasts</span> Suara Gembala
+            </span>
+<span class="absolute bottom-3 right-3 px-2 py-0.5 bg-slate-dark/80 backdrop-blur-sm text-surface-cream text-xs rounded font-medium">24:18 MIN</span>
+</div>
+<div class="p-5 flex flex-col flex-1 justify-between">
+<div>
+<span class="text-xs text-slate-primary font-medium">Episode 41 • Tanya Jawab Iman</span>
+<h3 class="text-lg font-bold text-slate-dark mt-1 group-hover:text-warm-gold transition-colors line-clamp-2">
+                "Mengapa Gereja Mengkhususkan Bulan Mei Bagi Bunda Maria?"
+              </h3>
+<p class="text-slate-primary text-sm mt-2 line-clamp-2">
+                Ulasan teologis dan tradisi devosional Rosario keluarga bersama Kepala Paroki dalam bahasa yang hangat dan mudah dipahami.
+              </p>
+</div>
+<div class="pt-4 mt-4 border-t border-border-subtle flex items-center justify-between">
+<span class="text-xs font-semibold text-slate-primary flex items-center gap-1">
+<span class="material-symbols-outlined text-sm" data-icon="headphones">headphones</span> Podcast Audio
+              </span>
+<a class="inline-flex items-center gap-1 text-xs font-bold text-warm-gold hover:text-warm-gold-hover" href="#">
+                Dengarkan Sekarang
+                <span class="material-symbols-outlined text-sm" data-icon="play_arrow">play_arrow</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<div class="mt-12 text-center">
+<button class="inline-flex items-center gap-2 px-6 py-3 rounded-lg border border-border-subtle bg-surface-card hover:bg-surface-cream text-slate-dark text-sm font-semibold transition-all shadow-sm">
+<span>Muat Arsip Portofolio Lainnya</span>
+<span class="material-symbols-outlined text-sm" data-icon="expand_more">expand_more</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Highlight Hub Katekese Teaser -->
+<section class="py-16 bg-surface-cream" id="e-katekese">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="relative bg-gradient-to-br from-surface-card via-surface-cream to-primary-fixed/20 rounded-2xl border border-warm-gold/20 p-8 md:p-12 shadow-md overflow-hidden">
+<!-- Subtle decorative background cross mark -->
+<div class="absolute -right-10 -bottom-10 opacity-5 pointer-events-none text-warm-gold">
+<span class="material-symbols-outlined" data-icon="church" style="font-size: 280px;">church</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
+<div class="lg:col-span-7 flex flex-col gap-4">
+<div class="inline-flex items-center gap-2 self-start px-3 py-1 rounded-full bg-warm-gold/15 text-warm-gold text-xs font-bold tracking-wider uppercase border border-warm-gold/30">
+<span class="material-symbols-outlined text-sm" data-icon="menu_book">menu_book</span>
+              E-Katekese Edisi Khusus 2025
+            </div>
+<h2 class="text-3xl sm:text-4xl font-black text-slate-dark tracking-tight leading-snug">
+              Modul Doa &amp; Devosi: "Bulan Maria &amp; Sukacita Paskah Keluarga"
+            </h2>
+<p class="text-slate-primary text-base leading-relaxed">
+              Diterbitkan secara resmi oleh Tim Pastoral Liturgi &amp; Komsos SMTB. Berisi panduan doa rosario bersama lingkungan, ulasan bacaan misa harian, serta aktivitas interaktif bagi anak-anak dan remaja untuk mendalami iman Katolik di rumah.
+            </p>
+<!-- Feature bullets -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2 text-sm text-slate-dark">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-warm-gold text-base" data-icon="check_circle">check_circle</span>
+<span>Format PDF Siap Cetak (A4 &amp; Mobile)</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-warm-gold text-base" data-icon="check_circle">check_circle</span>
+<span>Disertai QR Audio Renungan Harian</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-warm-gold text-base" data-icon="check_circle">check_circle</span>
+<span>Teks Doa Liturgis Resmi Bahasa Indonesia</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-warm-gold text-base" data-icon="check_circle">check_circle</span>
+<span>100% Bebas Biaya untuk Seluruh Umat</span>
+</div>
+</div>
+<div class="pt-4 flex flex-wrap items-center gap-4">
+<button class="inline-flex items-center gap-2 rounded-lg h-12 px-6 bg-warm-gold hover:bg-warm-gold-hover text-on-primary text-base font-semibold shadow-md transition-all">
+<span class="material-symbols-outlined" data-icon="download">download</span>
+<span>Unduh Gratis (PDF • 14.8 MB)</span>
+</button>
+<a class="inline-flex items-center gap-2 text-slate-dark hover:text-warm-gold text-sm font-semibold transition-colors" href="#">
+<span>Lihat Arsip Katekese Lengkap</span>
+<span class="material-symbols-outlined text-base" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Mockup Visual -->
+<div class="lg:col-span-5 flex justify-center">
+<div class="relative max-w-sm w-full">
+<div class="absolute inset-0 bg-warm-gold/20 rounded-2xl filter blur-xl transform rotate-3 scale-95"></div>
+<div class="relative bg-surface-card rounded-2xl p-4 shadow-xl border border-border-subtle">
+<div class="aspect-[3/4] rounded-xl overflow-hidden bg-slate-dark relative">
+<img class="w-full h-full object-cover" data-alt="Editorial graphic book cover mockup of a Catholic liturgical guide titled Bulan Maria dan Sukacita Paskah, featuring an artistic Marian emblem and golden halo illustration on deep clean cream paper with rich typography and embossed gold foil aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0HzzRGmuYzhU3gehS3F-Fgz8qFsJwH0JZtpa_e_X7wkeFTpQXzsoWwGiPkOCuf1nVJNy4u3UHLB5K2DY7IrY56EnuYxlyXc09BVYDMOUGdv3W3ty6uILvfjROXwBvpzZBXpZvRKRACmQ_qECIBGHyx_8RxwlkZjVB7f0h5fOToMoMgeDvXhSUqLiVgdnBQ7KwsyCnXz_2qvsnBaCJwu53zuqIX2mSVyJlMgTz4xb6TzrCoqfBp1C9"/>
+<div class="absolute bottom-3 left-3 right-3 bg-surface-cream/90 backdrop-blur-md rounded-lg p-3 border border-border-subtle flex items-center justify-between">
+<div>
+<p class="text-xs font-bold text-slate-dark">Edisi Mei - Juni 2025</p>
+<p class="text-[11px] text-slate-primary">Paroki SMTB Ngagel Surabaya</p>
+</div>
+<span class="px-2 py-1 bg-status-success text-surface-cream text-[10px] font-bold rounded uppercase">Terbaru</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section Ajakan Berpartisipasi & Kutipan Rohani -->
+<section class="py-16 bg-slate-dark text-surface-cream relative overflow-hidden" id="join">
+<div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+<!-- St. Francis de Sales Icon & Quote -->
+<div class="w-16 h-16 mx-auto rounded-full bg-warm-gold/20 border border-warm-gold/40 flex items-center justify-center text-warm-gold mb-6 shadow-inner">
+<span class="material-symbols-outlined text-3xl" data-icon="format_quote">format_quote</span>
+</div>
+<blockquote class="text-xl sm:text-2xl md:text-3xl font-medium leading-relaxed italic max-w-3xl mx-auto text-surface-cream/95">
+        "Kebenaran yang disampaikan dengan kelemahlembutan memiliki kekuatan memikat yang tak tertandingi."
+      </blockquote>
+<p class="mt-4 text-warm-gold font-bold text-sm sm:text-base tracking-wider uppercase">
+        — Santo Fransiskus de Sales
+      </p>
+<p class="text-slate-primary text-xs sm:text-sm">
+        Pelindung Para Jurnalis, Penulis, &amp; Pewarta Media Komunikasi Katolik
+      </p>
+<div class="my-10 max-w-2xl mx-auto h-px bg-slate-primary/30"></div>
+<div class="flex flex-col items-center">
+<h3 class="text-2xl sm:text-3xl font-extrabold text-surface-cream">
+          Punya Minat di Bidang Audio-Visual &amp; Desain?
+        </h3>
+<p class="mt-3 text-surface-cream/80 text-sm sm:text-base max-w-xl">
+          Mari persembahkan bakat fotografi, penulisan, siaran langsung, atau desain grafis Anda untuk melayani Gereja dan menyebarkan kasih Kristus.
+        </p>
+<div class="mt-8 flex flex-wrap justify-center gap-4">
+<a class="inline-flex items-center gap-2 rounded-lg h-12 px-8 bg-warm-gold hover:bg-warm-gold-hover text-on-primary text-base font-bold shadow-lg transition-all" href="#kontak">
+<span class="material-symbols-outlined" data-icon="person_add">person_add</span>
+<span>Daftar Jadi Relawan Media</span>
+</a>
+<a class="inline-flex items-center gap-2 rounded-lg h-12 px-6 bg-slate-primary hover:bg-slate-primary/80 text-surface-cream text-base font-medium border border-slate-primary transition-all" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined" data-icon="share">share</span>
+<span>Ikuti @komsos_smtb</span>
+</a>
+</div>
+</div>
+</div>
+</section>
+<!-- Kontak & Pengajuan Peliputan Modal/Section Anchor -->
+<section class="py-16 bg-surface-cream border-t border-border-subtle" id="kontak">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-5 flex flex-col gap-6">
+<div>
+<span class="text-xs font-bold text-warm-gold tracking-widest uppercase">Layanan Terpadu</span>
+<h2 class="text-3xl font-extrabold text-slate-dark mt-1">Hubungi Komsos SMTB Studio</h2>
+<p class="text-slate-primary text-sm mt-2">
+              Koor, Seksi Paroki, Wilayah, atau Komunitas Rohani dapat mengajukan peliputan kegiatan, siaran live misa peringatan, atau penerbitan artikel warta.
+            </p>
+</div>
+<div class="space-y-4">
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-card border border-border-subtle shadow-sm">
+<span class="material-symbols-outlined text-warm-gold mt-0.5" data-icon="location_on">location_on</span>
+<div>
+<h4 class="font-bold text-slate-dark text-sm">Studio &amp; Ruang Kontrol Komsos</h4>
+<p class="text-xs text-slate-primary mt-0.5">Gedung Pastoral Lt. 2, Paroki Santa Maria Tak Bercela<br/>Jl. Ngagel Jaya Utara No. 58, Surabaya, Jawa Timur</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-card border border-border-subtle shadow-sm">
+<span class="material-symbols-outlined text-warm-gold mt-0.5" data-icon="mail">mail</span>
+<div>
+<h4 class="font-bold text-slate-dark text-sm">Surel Redaksi &amp; Peliputan</h4>
+<p class="text-xs text-slate-primary mt-0.5">media.komsos@parokismtb.org</p>
+</div>
+</div>
+<div class="flex items-start gap-4 p-4 rounded-xl bg-surface-card border border-border-subtle shadow-sm">
+<span class="material-symbols-outlined text-warm-gold mt-0.5" data-icon="schedule">schedule</span>
+<div>
+<h4 class="font-bold text-slate-dark text-sm">Jam Operasional Pelayanan</h4>
+<p class="text-xs text-slate-primary mt-0.5">Selasa - Sabtu: 09:00 - 18:00 WIB<br/>Minggu: Standby Liputan Misa Rutin</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Form Pengajuan Peliputan / Pendaftaran -->
+<div class="lg:col-span-7 bg-surface-card rounded-2xl p-6 sm:p-8 border border-border-subtle shadow-sm">
+<h3 class="text-xl font-bold text-slate-dark mb-1">Formulir Cepat Peliputan &amp; Partisipasi</h3>
+<p class="text-xs sm:text-sm text-slate-primary mb-6">Silakan lengkapi detail kegiatan atau divisi relawan yang ingin Anda tuju.</p>
+<form class="space-y-4" onsubmit="handleFormSubmit(event)">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold text-slate-dark mb-1.5">Nama Lengkap / Komunitas</label>
+<input class="w-full rounded-lg border-border-subtle text-sm p-2.5 focus:border-warm-gold focus:ring-warm-gold bg-surface-cream text-slate-dark" placeholder="Cth: Maria Francisca / OMK Wilayah 4" required="" type="text"/>
+</div>
+<div>
+<label class="block text-xs font-semibold text-slate-dark mb-1.5">Nomor WhatsApp Aktif</label>
+<input class="w-full rounded-lg border-border-subtle text-sm p-2.5 focus:border-warm-gold focus:ring-warm-gold bg-surface-cream text-slate-dark" placeholder="0812-xxxx-xxxx" required="" type="tel"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs font-semibold text-slate-dark mb-1.5">Kategori Kepentingan</label>
+<select class="w-full rounded-lg border-border-subtle text-sm p-2.5 focus:border-warm-gold focus:ring-warm-gold bg-surface-cream text-slate-dark">
+<option>Ajukan Peliputan Misa / Acara Paroki</option>
+<option>Pendaftaran Relawan Media Baru</option>
+<option>Permohonan Publikasi Warta / Flyer</option>
+<option>Kolaborasi Konten E-Katekese</option>
+</select>
+</div>
+<div>
+<label class="block text-xs font-semibold text-slate-dark mb-1.5">Rencana Tanggal Pelaksanaan</label>
+<input class="w-full rounded-lg border-border-subtle text-sm p-2.5 focus:border-warm-gold focus:ring-warm-gold bg-surface-cream text-slate-dark" type="date"/>
+</div>
+</div>
+<div>
+<label class="block text-xs font-semibold text-slate-dark mb-1.5">Deskripsi Singkat Acara / Portofolio Diri</label>
+<textarea class="w-full rounded-lg border-border-subtle text-sm p-2.5 focus:border-warm-gold focus:ring-warm-gold bg-surface-cream text-slate-dark" placeholder="Tuliskan ringkasan acara, lokasi, durasi, serta kebutuhan spesifik seperti live streaming atau foto dokumenter..." required="" rows="3"></textarea>
+</div>
+<div class="pt-2">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-lg h-11 px-8 bg-warm-gold hover:bg-warm-gold-hover text-on-primary font-semibold text-sm shadow-md transition-all" type="submit">
+<span class="material-symbols-outlined text-sm" data-icon="send">send</span>
+<span>Kirim Permohonan ke Komsos SMTB</span>
+</button>
+</div>
+<div class="hidden p-3 rounded-lg bg-status-success/10 text-status-success text-xs font-medium border border-status-success/20" id="form-success-msg">
+              Pesan berhasil dikirim! Tim Sekretariat Komsos SMTB akan segera menghubungi Anda melalui WhatsApp.
+            </div>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-cream border-t border-border-subtle py-10">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-lg bg-warm-gold/10 flex items-center justify-center text-warm-gold">
+<svg class="w-5 h-5" fill="none" viewbox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<p class="text-xs text-slate-primary">
+          © 2025 Seksi Komunikasi Sosial (Komsos) Paroki Santa Maria Tak Bercela Surabaya. Pelayanan untuk Kemuliaan Allah yang Lebih Besar.
+        </p>
+</div>
+<div class="flex items-center gap-6 text-xs text-slate-primary font-medium">
+<a class="hover:text-warm-gold transition-colors" href="#">Pedoman Siaran</a>
+<a class="hover:text-warm-gold transition-colors" href="#">Kebijakan Privasi</a>
+<a class="hover:text-warm-gold transition-colors" href="#">Jadwal Misa SMTB</a>
+</div>
+</div>
+</footer>
+<!-- Micro-Interactions Script -->
+<script>
+    function filterPortfolio(category) {
+      const items = document.querySelectorAll('.portfolio-item');
+      const buttons = document.querySelectorAll('.tab-btn');
+
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-cat') === category) {
+          btn.classList.add('bg-slate-primary', 'text-on-primary');
+          btn.classList.remove('text-slate-primary');
+        } else {
+          btn.classList.remove('bg-slate-primary', 'text-on-primary');
+          btn.classList.add('text-slate-primary');
+        }
+      });
+
+      items.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+        if (category === 'all' || itemCategory === category) {
+          item.style.display = 'flex';
+        } else {
+          item.style.display = 'none';
+        }
+      });
+    }
+
+    function handleFormSubmit(e) {
+      e.preventDefault();
+      const msg = document.getElementById('form-success-msg');
+      msg.classList.remove('hidden');
+      e.target.reset();
+      setTimeout(() => {
+        msg.classList.add('hidden');
+      }, 6000);
+    }
+  </script>
+</body></html>

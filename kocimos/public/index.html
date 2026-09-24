@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Komsos SMTB Studio - Paroki Santa Maria Tak Bercela Surabaya</title>
+
+  <!-- Favicon Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="shortcut icon" href="favicon_io/favicon.ico">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+
+  <!-- Google Fonts: Inter & Material Symbols -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS Compiler -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "warm-gold": "#D97706",
+            "outline-variant": "#dbc2b0",
+            "surface-dim": "#dadada",
+            "surface-container": "#eeeeee",
+            "secondary-fixed-dim": "#b7c4ff",
+            "on-secondary-container": "#fffbff",
+            "on-surface": "#1a1c1c",
+            "error": "#ba1a1a",
+            "secondary-container": "#4069f2",
+            "surface-variant": "#e2e2e2",
+            "on-tertiary-fixed-variant": "#3a485c",
+            "status-error": "#B91C1C",
+            "on-tertiary-container": "#fdfcff",
+            "secondary-fixed": "#dce1ff",
+            "surface-container-low": "#f3f3f3",
+            "tertiary-fixed-dim": "#b9c7e0",
+            "surface-card": "#FFFFFF",
+            "tertiary-fixed": "#d5e3fd",
+            "tertiary-container": "#67758c",
+            "on-primary-container": "#fffbff",
+            "surface": "#f9f9f9",
+            "on-error": "#ffffff",
+            "on-tertiary": "#ffffff",
+            "tertiary": "#4f5d72",
+            "surface-container-lowest": "#ffffff",
+            "on-primary-fixed-variant": "#6e3900",
+            "on-secondary-fixed": "#001551",
+            "on-primary": "#ffffff",
+            "status-success": "#15803D",
+            "primary-fixed-dim": "#ffb77d",
+            "inverse-on-surface": "#f0f1f1",
+            "secondary": "#1d4ed8",
+            "surface-bright": "#f9f9f9",
+            "error-container": "#ffdad6",
+            "on-surface-variant": "#554336",
+            "primary-fixed": "#ffdcc3",
+            "on-error-container": "#93000a",
+            "on-background": "#1a1c1c",
+            "on-primary-fixed": "#2f1500",
+            "surface-container-high": "#e8e8e8",
+            "surface-cream": "#FAFAFA",
+            "slate-primary": "#334155",
+            "primary-container": "#b15f00",
+            "warm-gold-hover": "#B45309",
+            "outline": "#887364",
+            "slate-dark": "#0F172A",
+            "inverse-surface": "#2f3131",
+            "surface-tint": "#904d00",
+            "surface-container-highest": "#e2e2e2",
+            "status-warning": "#B45309",
+            "on-tertiary-fixed": "#0d1c2f",
+            "border-subtle": "#E2E8F0",
+            "on-secondary": "#ffffff",
+            "sacred-blue": "#1D4ED8",
+            "sacred-blue-subtle": "#EFF6FF",
+            "inverse-primary": "#ffb77d",
+            "primary": "#8d4b00",
+            "background": "#f9f9f9",
+            "on-secondary-fixed-variant": "#0039b5"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "space-xs": "0.25rem",
+            "space-lg": "1.5rem",
+            "space-2xl": "4rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "space-xl": "2.5rem",
+            "space-md": "1rem",
+            "margin-mobile": "1rem",
+            "space-sm": "0.5rem",
+            "margin": "2rem"
+          }
+        }
+      }
+    };
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+</head>
+
+<body class="bg-surface-cream text-slate-dark antialiased" style="font-family: Inter, sans-serif;">
+
+  <!-- Sticky Top Navigation -->
+  <header class="sticky top-0 z-50 bg-surface-cream/95 backdrop-blur-md border-b border-border-subtle">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <div class="flex items-center gap-3 cursor-pointer" onclick="switchTab('beranda')">
+          <img src="asset/kocimos_gaul.jpg" alt="Logo Komsos SMTB" class="w-11 h-11 rounded-xl object-cover border-2 border-warm-gold/40 shadow-sm">
+          <div>
+            <span class="text-xs uppercase tracking-wider font-semibold text-warm-gold block">Paroki Santa Maria Tak Bercela</span>
+            <h2 class="text-slate-dark text-lg font-bold leading-tight tracking-[-0.015em]">Komsos SMTB Studio</h2>
+          </div>
+        </div>
+
+        <nav class="hidden md:flex items-center gap-8 nav-links">
+          <a class="text-slate-primary hover:text-warm-gold text-sm font-semibold transition-colors duration-200 border-b-2 border-warm-gold pb-1 cursor-pointer" data-tab="beranda">Beranda</a>
+          <a class="text-slate-primary hover:text-warm-gold text-sm font-medium transition-colors duration-200 cursor-pointer" data-tab="portofolio">Portofolio</a>
+          <a class="text-slate-primary hover:text-warm-gold text-sm font-medium transition-colors duration-200 cursor-pointer" data-tab="e-katekese">E-Katekese</a>
+          <a class="text-slate-primary hover:text-warm-gold text-sm font-medium transition-colors duration-200 cursor-pointer" data-tab="store">Toko Rohani 🛍️</a>
+          <a class="text-slate-primary hover:text-warm-gold text-sm font-medium transition-colors duration-200 cursor-pointer" data-tab="kontak">Kontak</a>
+        </nav>
+
+        <div class="flex items-center gap-3">
+          <button onclick="openCartModal()" class="inline-flex items-center gap-2 rounded-lg h-10 px-4 bg-surface-container-low text-slate-dark hover:bg-surface-container text-sm font-semibold transition-all border border-border-subtle">
+            <span class="material-symbols-outlined text-warm-gold">shopping_cart</span>
+            <span>Keranjang (<span id="cart-badge">0</span>)</span>
+          </button>
+          <a class="inline-flex items-center justify-center rounded-lg h-10 px-4 bg-warm-gold hover:bg-warm-gold-hover text-on-primary text-sm font-semibold shadow-sm transition-all" onclick="switchTab('kontak')">
+            Gabung Tim Media
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TAB 1: BERANDA -->
+  <div id="beranda" class="tab-content">
+    <section class="relative overflow-hidden pt-8 pb-16 lg:py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+          <div class="lg:col-span-7 flex flex-col gap-6">
+            <div class="inline-flex items-center gap-2 self-start px-3 py-1.5 rounded-full bg-sacred-blue-subtle text-secondary text-xs font-semibold uppercase tracking-wider border border-sacred-blue/20">
+              <span class="w-2 h-2 rounded-full bg-sacred-blue animate-pulse"></span>
+              Pelayanan Pewartaan Digital Katolik
+            </div>
+            <h1 class="text-slate-dark text-4xl sm:text-5xl lg:text-5xl font-black leading-tight tracking-[-0.03em]">
+              Menghadirkan Kabar Baik Melalui Media Digital Paroki SMTB Surabaya
+            </h1>
+            <p class="text-slate-primary text-base sm:text-lg leading-relaxed max-w-2xl">
+              Studio kreatif pelayanan komunikasi sosial Paroki Santa Maria Tak Bercela. Berdedikasi memproduksi siaran liturgi sinematik, warta paroki interaktif, dan katekese multimedia modern yang menjangkau umat di mana saja.
+            </p>
+            <div class="flex flex-wrap items-center gap-4 pt-2">
+              <button class="inline-flex items-center gap-2 rounded-lg h-12 px-6 bg-warm-gold hover:bg-warm-gold-hover text-on-primary text-base font-semibold shadow-md transition-all" onclick="switchTab('portofolio')">
+                <span>Jelajahi Karya Media</span>
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </button>
+              <button class="inline-flex items-center gap-2 rounded-lg h-12 px-6 bg-surface-card hover:bg-surface-container-low text-slate-dark text-base font-semibold border border-border-subtle shadow-sm transition-all" onclick="switchTab('kontak')">
+                <span class="material-symbols-outlined">calendar_today</span>
+                <span>Ajukan Peliputan</span>
+              </button>
+            </div>
+            <div class="pt-4 flex items-center gap-4 text-xs font-medium text-slate-primary">
+              <div class="flex items-center gap-1.5 text-status-success">
+                <span class="material-symbols-outlined">radio_button_checked</span>
+                <span>Misa Live Streaming Setiap Minggu</span>
+              </div>
+              <span class="text-outline-variant">•</span>
+              <div class="flex items-center gap-1.5 text-slate-primary">
+                <span class="material-symbols-outlined">hd</span>
+                <span>Kualitas Produksi 4K Cinema</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Video Showreel Card Preview -->
+          <div class="lg:col-span-5">
+            <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-border-subtle group bg-slate-dark">
+              <div class="w-full aspect-[4/3] bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-90" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZV-DDEhoxWnNXg562Fw5FGbZpJFOTKSiYfOaJReItjiLTM_KATrcTIz1j5C4fiRDdj3VhF58l8epPS7gFZxrIu01rTEkSd5luAXdxQx5mCENvxI7r2KOyqn3TyR9N-r6X6JMCx4VCyPuB3-FGWgp5SLLktxHuxaN41cNUuS2s2DYgprcfe2Ow23j_LYxSs6_EPzDfCi3LPR5B8nJiXFRqO3bkVk3yF0FEJBGsjfDSQQQTJrLVE37W')">
+              </div>
+              <div class="absolute inset-0 bg-gradient-to-t from-slate-dark via-slate-dark/40 to-transparent flex flex-col justify-between p-6 text-surface-cream">
+                <div class="flex justify-between items-center">
+                  <span class="px-3 py-1 bg-warm-gold text-surface-cream text-xs font-bold rounded-full uppercase tracking-wider flex items-center gap-1">
+                    <span class="material-symbols-outlined text-sm">play_circle</span> Showreel 2026
+                  </span>
+                  <span class="px-2.5 py-1 bg-slate-dark/70 backdrop-blur-md rounded-md text-xs font-medium">02:45 MIN</span>
+                </div>
+                <div class="flex items-end justify-between">
+                  <div>
+                    <p class="text-xs font-medium text-warm-gold uppercase tracking-wider">Trailer Dokumenter Liturgi</p>
+                    <h3 class="text-lg font-bold text-surface-cream">Harmoni Jiwa &amp; Perayaan Iman SMTB</h3>
+                  </div>
+                  <button class="w-12 h-12 rounded-full bg-warm-gold text-on-primary flex items-center justify-center shadow-lg hover:scale-110 transition-transform">
+                    <span class="material-symbols-outlined">play_arrow</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Outreach Statistics Strip -->
+        <div class="mt-14 grid grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="bg-surface-card rounded-xl p-6 border border-border-subtle shadow-sm">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-slate-primary text-sm font-medium">Umat &amp; Pengikut</span>
+              <span class="material-symbols-outlined text-warm-gold">groups</span>
+            </div>
+            <p class="text-slate-dark text-3xl font-extrabold leading-tight">45K+</p>
+            <div class="flex items-center gap-1 mt-2 text-status-success text-xs font-semibold">
+              <span class="material-symbols-outlined text-sm">trending_up</span>
+              <span>+14% kuartal ini</span>
+            </div>
+          </div>
+          <div class="bg-surface-card rounded-xl p-6 border border-border-subtle shadow-sm">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-slate-primary text-sm font-medium">Video Misa &amp; Liturgi</span>
+              <span class="material-symbols-outlined text-warm-gold">videocam</span>
+            </div>
+            <p class="text-slate-dark text-3xl font-extrabold leading-tight">180+</p>
+            <div class="flex items-center gap-1 mt-2 text-status-success text-xs font-semibold">
+              <span class="material-symbols-outlined text-sm">trending_up</span>
+              <span>+8% siaran bertambah</span>
+            </div>
+          </div>
+          <div class="bg-surface-card rounded-xl p-6 border border-border-subtle shadow-sm">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-slate-primary text-sm font-medium">Impresi Bulanan</span>
+              <span class="material-symbols-outlined text-warm-gold">visibility</span>
+            </div>
+            <p class="text-slate-dark text-3xl font-extrabold leading-tight">1.2M</p>
+            <div class="flex items-center gap-1 mt-2 text-status-success text-xs font-semibold">
+              <span class="material-symbols-outlined text-sm">trending_up</span>
+              <span>+22% pertumbuhan jangkauan</span>
+            </div>
+          </div>
+          <div class="bg-surface-card rounded-xl p-6 border border-border-subtle shadow-sm">
+            <div class="flex items-center justify-between mb-2">
+              <span class="text-slate-primary text-sm font-medium">Relawan Media Aktif</span>
+              <span class="material-symbols-outlined text-warm-gold">volunteer_activism</span>
+            </div>
+            <p class="text-slate-dark text-3xl font-extrabold leading-tight">65+</p>
+            <div class="flex items-center gap-1 mt-2 text-sacred-blue text-xs font-semibold">
+              <span class="material-symbols-outlined text-sm">volunteer_activism</span>
+              <span>4 Divisi Pelayanan</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- TAB 2: PORTOFOLIO KARYA -->
+  <div id="portofolio" class="tab-content" style="display: none;">
+    <section class="py-16 bg-surface-container-low border-y border-border-subtle">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-10 gap-4">
+          <div>
+            <div class="inline-flex items-center gap-1.5 text-xs font-bold text-warm-gold tracking-widest uppercase mb-2">
+              <span class="material-symbols-outlined text-sm">auto_awesome</span>
+              Karya Pewartaan Kreatif
+            </div>
+            <h2 class="text-3xl font-extrabold text-slate-dark tracking-tight">Portofolio Konten Multimedia</h2>
+            <p class="text-slate-primary text-sm sm:text-base mt-1">
+              Telusuri arsip dokumentasi rohani, infografis liturgis, siaran misa kudus, dan obrolan rohani harian.
+            </p>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="portfolio-grid">
+          <!-- Rendered dynamically by JS -->
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- TAB 3: E-KATEKESE -->
+  <div id="e-katekese" class="tab-content" style="display: none;">
+    <section class="py-16 bg-surface-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="mb-10">
+          <h2 class="text-3xl font-extrabold text-slate-dark tracking-tight">Pusat Modul &amp; Literatur Katekese</h2>
+          <p class="text-slate-primary text-sm sm:text-base mt-1">Unduh modul gratis PDF panduan komuni pertama dan ibadat keluarga.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="katekese-grid">
+          <!-- Rendered dynamically by JS -->
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- TAB 4: TOKO ROHANI -->
+  <div id="store" class="tab-content" style="display: none;">
+    <section class="py-16 bg-surface-container-low border-y border-border-subtle">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-end mb-10">
+          <div>
+            <h2 class="text-3xl font-extrabold text-slate-dark tracking-tight">Etalase Toko Rohani SMTB</h2>
+            <p class="text-slate-primary text-sm sm:text-base mt-1">Dapatkan produk fisik handmade UMKM paroki &amp; modul digital eksklusif.</p>
+          </div>
+          <span class="px-3 py-1 bg-warm-gold/20 text-warm-gold text-xs font-bold rounded-lg border border-warm-gold/30">
+            Kode Diskon: KOMSOSBERKAH
+          </span>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="product-grid">
+          <!-- Rendered dynamically by JS -->
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- TAB 5: KONTAK -->
+  <div id="kontak" class="tab-content" style="display: none;">
+    <section class="py-16 bg-surface-cream">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+          <div class="lg:col-span-5 flex flex-col gap-6">
+            <div>
+              <span class="text-xs font-bold text-warm-gold tracking-widest uppercase">Layanan Terpadu</span>
+              <h2 class="text-3xl font-extrabold text-slate-dark mt-1">Hubungi Komsos SMTB Studio</h2>
+              <p class="text-slate-primary text-sm mt-2">
+                Koor, Seksi Paroki, Wilayah, atau Komunitas Rohani dapat mengajukan peliputan kegiatan atau penerbitan warta.
+              </p>
+            </div>
+            <div class="space-y-4">
+              <div class="flex items-start gap-4 p-4 rounded-xl bg-surface-card border border-border-subtle shadow-sm">
+                <span class="material-symbols-outlined text-warm-gold mt-0.5">location_on</span>
+                <div>
+                  <h4 class="font-bold text-slate-dark text-sm">Studio &amp; Ruang Kontrol Komsos</h4>
+                  <p class="text-xs text-slate-primary mt-0.5">Paroki Santa Maria Tak Bercela<br/>Jl. Ngagel Jaya Utara No. 58, Surabaya</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4 p-4 rounded-xl bg-surface-card border border-border-subtle shadow-sm">
+                <span class="material-symbols-outlined text-warm-gold mt-0.5">mail</span>
+                <div>
+                  <h4 class="font-bold text-slate-dark text-sm">Surel Redaksi</h4>
+                  <p class="text-xs text-slate-primary mt-0.5">media.komsos@parokismtb.org</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-7 bg-surface-card rounded-2xl p-6 sm:p-8 border border-border-subtle shadow-sm">
+            <h3 class="text-xl font-bold text-slate-dark mb-1">Formulir Cepat Peliputan</h3>
+            <p class="text-xs sm:text-sm text-slate-primary mb-6">Silakan lengkapi detail permohonan liputan Anda.</p>
+            <form class="space-y-4" onsubmit="alert('Terima kasih! Permohonan telah terkirim.'); return false;">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label class="block text-xs font-semibold text-slate-dark mb-1.5">Nama Lengkap / Komunitas</label>
+                  <input class="w-full rounded-lg border-border-subtle text-sm p-2.5 bg-surface-cream text-slate-dark border" placeholder="Contoh: OMK Wilayah 4" required type="text" />
+                </div>
+                <div>
+                  <label class="block text-xs font-semibold text-slate-dark mb-1.5">Nomor WhatsApp Aktif</label>
+                  <input class="w-full rounded-lg border-border-subtle text-sm p-2.5 bg-surface-cream text-slate-dark border" placeholder="0812-xxxx-xxxx" required type="tel" />
+                </div>
+              </div>
+              <div>
+                <label class="block text-xs font-semibold text-slate-dark mb-1.5">Detail Pesan / Informasi Acara</label>
+                <textarea class="w-full rounded-lg border-border-subtle text-sm p-2.5 bg-surface-cream text-slate-dark border" placeholder="Tuliskan detail tempat, waktu, dan jenis acara..." required rows="3"></textarea>
+              </div>
+              <button class="w-full inline-flex items-center justify-center gap-2 rounded-lg h-11 px-8 bg-warm-gold hover:bg-warm-gold-hover text-on-primary font-semibold text-sm shadow-md transition-all" type="submit">
+                <span>Kirim Permohonan</span>
+                <span class="material-symbols-outlined text-sm">send</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- MODAL KERANJANG BELANJA -->
+  <div id="cart-modal" class="fixed inset-0 z-50 bg-slate-dark/70 backdrop-blur-sm flex items-center justify-center p-4 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="bg-surface-card rounded-2xl max-w-lg w-full p-6 border border-border-subtle shadow-2xl">
+      <div class="flex justify-between items-center mb-4 pb-3 border-b border-border-subtle">
+        <h3 class="text-lg font-bold text-slate-dark flex items-center gap-2">
+          <span class="material-symbols-outlined text-warm-gold">shopping_bag</span>
+          Keranjang Belanja Toko Rohani
+        </h3>
+        <button onclick="closeCartModal()" class="text-slate-primary hover:text-slate-dark font-bold text-xl">&times;</button>
+      </div>
+
+      <div id="cart-modal-items" class="max-h-60 overflow-y-auto mb-4">
+        <!-- Rendered by JS -->
+      </div>
+
+      <div class="bg-surface-cream p-3 rounded-xl border border-border-subtle mb-4">
+        <label class="block text-xs font-semibold text-slate-dark mb-1">Kode Promo / Diskon</label>
+        <div class="flex gap-2">
+          <input type="text" id="promo-code-input" class="w-full rounded-lg border-border-subtle text-xs p-2 uppercase border" placeholder="Cth: KOMSOSBERKAH">
+          <button onclick="applyPromo()" class="px-4 py-2 bg-slate-primary text-on-primary text-xs font-semibold rounded-lg hover:bg-slate-dark">Gunakan</button>
+        </div>
+        <div id="promo-message" class="mt-1 text-xs"></div>
+      </div>
+
+      <div class="space-y-1 text-sm mb-4">
+        <div class="flex justify-between text-slate-primary">
+          <span>Subtotal:</span>
+          <span id="cart-subtotal">Rp 0</span>
+        </div>
+        <div class="flex justify-between text-status-success font-medium">
+          <span>Potongan Diskon:</span>
+          <span id="cart-discount">- Rp 0</span>
+        </div>
+        <div class="flex justify-between font-extrabold text-base text-slate-dark pt-2 border-t border-border-subtle">
+          <span>Total Pembayaran:</span>
+          <span id="cart-grandtotal" class="text-warm-gold">Rp 0</span>
+        </div>
+      </div>
+
+      <form onsubmit="submitCheckout(event)" class="space-y-3">
+        <input type="text" id="buyer-name" class="w-full rounded-lg border-border-subtle text-xs p-2.5 border" placeholder="Nama Lengkap Pemesan" required />
+        <input type="tel" id="buyer-wa" class="w-full rounded-lg border-border-subtle text-xs p-2.5 border" placeholder="Nomor WhatsApp (Aktif)" required />
+        <textarea id="buyer-address" class="w-full rounded-lg border-border-subtle text-xs p-2.5 border" placeholder="Alamat Pengiriman (Wajib untuk produk fisik)" rows="2"></textarea>
+        <button type="submit" class="w-full h-11 bg-warm-gold hover:bg-warm-gold-hover text-on-primary font-bold text-sm rounded-lg shadow-md transition-all">
+          Bayar Sekarang via Midtrans 💳
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-slate-dark text-surface-cream py-10 border-t border-border-subtle text-center text-xs">
+    <div class="max-w-7xl mx-auto px-4">
+      <p>&copy; 2026 Komsos SMTB Studio (Paroki Santa Maria Tak Bercela Surabaya). All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- App Script -->
+  <script src="js/app.js"></script>
+</body>
+
+</html>
